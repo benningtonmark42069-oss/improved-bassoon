@@ -14,7 +14,7 @@ else:
     st.error("Missing API Key. Please add GOOGLE_API_KEY to your Secrets.")
 
 # UI Elements
-uploaded_file = st.file_icon_uploader("Upload an image to generate video context...", type=['png', 'jpg', 'jpeg'])
+uploaded_file = st.file_uploader("Upload an image to generate video context...", type=['png', 'jpg', 'jpeg'])
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
